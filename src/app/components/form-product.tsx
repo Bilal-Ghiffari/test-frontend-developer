@@ -31,11 +31,6 @@ export default function FormProduct({ defaultValues, type }: Props) {
   console.log(state);
   return (
     <form className="space-y-6 w" action={formAction}>
-      {state.product !== null && (
-        <div className="mx-auto my-7 bg-red-500 w-[400px] p-4 rounded-lg text-white">
-          <div className="font-bold mb-4">{state.product}</div>
-        </div>
-      )}
       <div className="grid grid-cols-3 gap-4">
         <div className="space-y-2">
           <Label htmlFor="name">Name Product</Label>
